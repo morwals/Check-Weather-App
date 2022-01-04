@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express =require("express");
 const dotenv=require("dotenv");
 const ejs=require("ejs");
@@ -5,8 +7,6 @@ const bodyParser=require("body-parser");
 const app=express();
 const weatherData=require("./utils/weatherdata");
 
-
-dotenv.config({path:"config.env"});
 
 app.set("view engine","ejs");
 
